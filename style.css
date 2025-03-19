@@ -8,14 +8,9 @@
   margin: 0;
 }
 
-html {
-  min-height: 100%;
-}
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  min-height: 100%;
 }
 img,
 picture,
@@ -63,7 +58,7 @@ h6 {
   height: 100%;
   display: grid;
   grid-template-columns: minmax(250px, 12%) 1fr;
-  grid-template-rows: 20vh 80vh;
+  grid-template-rows: minmax(150px, 20vh) 80vh;
 }
 
 .sideBar,
@@ -98,10 +93,45 @@ h6 {
 .home {
   padding: 0px 0px 30px 30px;
   display: flex;
+  gap: 5px;
+}
+
+.home h3 {
+  align-self: center;
 }
 
 .navSpacer {
   padding: 15px;
+}
+
+.header {
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 40% 60%;
+}
+
+.headerIcon {
+  width: 25px;
+}
+
+.searchBar {
+  display: flex;
+  gap: 5px;
+}
+
+.searchBar input {
+  border-radius: 100px;
+  background-color: rgb(236, 242, 249);
+  height: 25px;
+  width: max(200px, 500px);
+  align-self: center;
+}
+
+.siteButtons button {
+  border-radius: 100px;
+  width: 100px;
+  background-color: aqua;
 }
 
 .mainContent {
@@ -109,6 +139,7 @@ h6 {
   grid-template-columns: 1fr 20%;
   grid-template-rows: 1fr 1fr;
   column-gap: 10px;
+  background-color: rgb(236, 242, 249);
 }
 
 .projectContainer {
