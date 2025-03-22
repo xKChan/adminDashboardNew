@@ -153,5 +153,23 @@ h6 {
 .cardContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
   column-gap: 10px;
+  row-gap: 30px;
+  padding-left: 50px;
+}
+
+.cards {
+  width: 78%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 50px 40px;
+}
+
+.colorAccent {
+  width: 20px;
+  background-color: orange;
 }
